@@ -13,6 +13,14 @@ function Dashboard() {
                     return(
                         <div className="Dashboard">
                             <header className="Dashboard-header">
+                            <div className="MentorHeaderText">
+                                <h2 style={{margin: 0}}>
+                                    My mentors
+                                </h2>
+                                <h5 style={{margin: 0}}>
+                                    Your recent mentors
+                                </h5>
+                            </div>
                             <div className="mainContainer">
                                 <Mentor/>
                                 <Link to="/Mentor">Mentor</Link>

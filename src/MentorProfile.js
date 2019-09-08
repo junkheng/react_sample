@@ -7,7 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { Route } from 'react-router-dom';
 
 
 const useStyles = makeStyles({
@@ -21,9 +20,8 @@ const useStyles = makeStyles({
 });
 
 
-export default function Mentor() {
+export default function MentorProfile() {
     const classes = useStyles();
-
     return (
         <Card className={classes.card}>
             <CardActionArea>
@@ -52,6 +50,6 @@ export default function Mentor() {
                 </Button>
             </CardActions>
         </Card>
-    );
+    )
 }
 
