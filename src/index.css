@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.Dashboard {
+  text-align: center;
+}
+
+.Dashboard-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Dashboard-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mainContainer {
+  margin: 1em 2em;
+}
+
+.LoginButton {
+  background-color: #4A90E2 !important;
+  color: #ffffff !important;
+  width: 17.5em;
+  text-align: left;
+  display: unset;
+}
+
+#email {
+  width: 15em;
+}
+
+#password {
+  width: 15em;
+}
