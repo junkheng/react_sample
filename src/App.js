@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Login from './Login'
+import Footer from './Footer'
 import logo from './img/logo.png';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Dashboard from './Dashboard';
@@ -28,6 +29,7 @@ function App() {
                                     </Grid>
                                     <Login />
                                 </header>
+                                <Footer />
                             </div>
                         </Grid>
                     </Grid>

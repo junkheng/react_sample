@@ -32,6 +32,9 @@ class Login extends React.Component {
                         </Grid>
                         <Grid item xs={12}>
                             <Button className="LoginButton" variant="outlined" type="submit">LOGIN</Button >
+                            <p className="BlueText">
+                                Forgot password
+                            </p>
                         </Grid>
                     </Grid>
                 </form>

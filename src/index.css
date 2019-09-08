@@ -49,11 +49,20 @@ code {
   color: #ffffff !important;
   width: 17.5em;
   text-align: left;
-  display: unset;
+  display: unset !important;
+}
+
+.BlueText {
+  /* display: initial !important; */
+  text-align: left;
+  width: 20em;
+  color: #4A90E2;
+  font-size: 12px;
+  padding: 0 10em;
 }
 
 #email {
-  width: 15em;
+  min-width: 15em;
 }
 
 #password {
