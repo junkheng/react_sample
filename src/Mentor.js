@@ -16,6 +16,10 @@ const useStyles = makeStyles({
       maxWidth: 345,
       minWidth: 305,
     },
+    description: {
+        marginTop: 20,
+        width: 305,
+    },
     media: {
       height: 120,
     },
@@ -79,6 +83,13 @@ export default function Mentor() {
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
+                                </Card>
+                                <Card className={classes.description}>
+                                    <CardContent>
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </Typography>
+                                    </CardContent>
                                 </Card>
                             </header>
                         </div>
