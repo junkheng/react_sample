@@ -22,7 +22,7 @@ function Dashboard() {
                                 </h5>
                             </div>
                             <div className="mainContainer">
-                                <Link to="/Mentor"><Mentor/></Link>
+                                <Link to="/Mentor"><Route component={Mentor}/></Link>
                             </div>
                             <div className="MentorHeaderText">
                                 <h2 style={{margin: 0}}>
@@ -33,14 +33,14 @@ function Dashboard() {
                                 </h5>
                             </div>
                             <div className="mainContainer">
-                                <Learning/>
+                                <Route component={Learning}/>
                             </div>
                             </header>
                         </div>      
                     )
                 }}/>
-                <Route exact path="/Mentor" component={Mentor} />
-                <Route exact path="/Learning" component={Learning} />
+            <Route exact path="/Mentor" component={Mentor} />
+            <Route exact path="/Learning" component={Learning} />
             </Switch>
         </Router>
     )
