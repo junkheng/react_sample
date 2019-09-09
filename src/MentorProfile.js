@@ -32,7 +32,7 @@ export default function MentorProfile() {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Darth Vader
+                        Darth Vaderasdasdsad
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                         Student <br/>

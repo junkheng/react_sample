@@ -22,8 +22,7 @@ function Dashboard() {
                                 </h5>
                             </div>
                             <div className="mainContainer">
-                                <Mentor/>
-                                <Link to="/Mentor">Mentor</Link>
+                                <Link to="/Mentor"><Mentor/></Link>
                             </div>
                             <div className="MentorHeaderText">
                                 <h2 style={{margin: 0}}>
@@ -34,7 +33,7 @@ function Dashboard() {
                                 </h5>
                             </div>
                             <div className="mainContainer">
-                                <Link to="/Learning"><Learning/></Link>
+                                <Learning/>
                             </div>
                             </header>
                         </div>      
