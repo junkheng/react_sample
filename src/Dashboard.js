@@ -25,9 +25,16 @@ function Dashboard() {
                                 <Mentor/>
                                 <Link to="/Mentor">Mentor</Link>
                             </div>
+                            <div className="MentorHeaderText">
+                                <h2 style={{margin: 0}}>
+                                    Learning Materials
+                                </h2>
+                                <h5 style={{margin: 0}}>
+                                    Check out what's new
+                                </h5>
+                            </div>
                             <div className="mainContainer">
-                                <Learning/>
-                                <Link to="/Learning">Learning</Link>
+                                <Link to="/Learning"><Learning/></Link>
                             </div>
                             </header>
                         </div>      
