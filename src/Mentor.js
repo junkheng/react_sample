@@ -8,7 +8,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import './index.css'
+import './index.css';
+import { Chart } from "react-google-charts";
+import FooterNav from './FooterNav'
 
 
 const useStyles = makeStyles({
@@ -19,6 +21,10 @@ const useStyles = makeStyles({
     description: {
         marginTop: 20,
         width: 305,
+    },
+    chart: {
+        marginTop: 20,
+        width: 345,
     },
     media: {
       height: 120,
@@ -87,11 +93,40 @@ export default function Mentor() {
                                 <Card className={classes.description}>
                                     <CardContent>
                                         <Typography variant="body2" color="textSecondary" component="p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                            incididunt ut labore et dolore magna aliqua. Magna ac placerat vestibulum lectus mauris ultrices eros.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                            incididunt ut labore et dolore magna aliqua. Magna ac placerat vestibulum lectus mauris ultrices eros.
                                         </Typography>
                                     </CardContent>
                                 </Card>
+                                <Card className={classes.chart}>
+                                    <CardContent>
+                                        <Chart
+                                            width={'300px'}
+                                            height={'150px'}
+                                            chartType="BarChart"
+                                            loader={<div>Loading Chart</div>}
+                                            data={[
+                                                ['Subject', 'Math', 'English', 'History', 'Science'],
+                                                ['', 100, 92, 80, 95],
+                                            ]}
+                                            options={{
+                                                title: 'Subject Competency',
+                                                chartArea: { width: '40%' },
+                                                hAxis: {
+                                                title: 'Scoring',
+                                                minValue: 0,
+                                                },
+                                                vAxis: {
+                                                title: '',
+                                                },
+                                            }}
+                                        />
+                                    </CardContent>
+                                </Card>
                             </header>
+                            <FooterNav />
                         </div>
                     )
                 }}/>

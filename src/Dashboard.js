@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Mentor from './Mentor'
 import Learning from './Learning'
+import FooterNav from './FooterNav'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
 
 
@@ -36,6 +37,7 @@ function Dashboard() {
                                 <Route component={Learning}/>
                             </div>
                             </header>
+                            <FooterNav />
                         </div>      
                     )
                 }}/>

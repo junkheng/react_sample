@@ -81,8 +81,8 @@ code {
 }
 
 .Mentor-header {
-  background-color: #ffffff;
-  min-height: 70vh;
+  background-color: #f3f3f3;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
