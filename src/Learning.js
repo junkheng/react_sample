@@ -5,7 +5,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {Grid} from '@material-ui/core';
 
@@ -43,10 +42,10 @@ export default function Learning() {
             <CardActions>
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
-                        <p>10 minute read</p>
+                        <p style={{fontSize: 12}}>10 minute read</p>
                     </Grid>
                     <Grid item xs={6}>
-                        <p>28793 views</p>
+                        <p style={{fontSize: 12}}>28793 views</p>
                     </Grid>
                 </Grid>
             </CardActions>

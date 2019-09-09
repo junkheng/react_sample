@@ -3,7 +3,7 @@ import './App.css';
 import Login from './Login'
 import Footer from './Footer'
 import logo from './img/logo.png';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Dashboard from './Dashboard';
 import {Grid} from '@material-ui/core';
 import Learning from './Learning';

@@ -52,6 +52,13 @@ code {
   display: unset !important;
 }
 
+.AppointmentButton {
+  background-color: #4A90E2 !important;
+  color: #ffffff !important;
+  width: 17.5em;
+  text-align: center;
+}
+
 .BlueText {
   /* display: initial !important; */
   text-align: left;
@@ -89,4 +96,9 @@ code {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.BackButton {
+  align-items: flex-start;
+  text-align: left;
 }
