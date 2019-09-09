@@ -1,9 +1,13 @@
 import React from 'react'
 import './App.css'
 import Mentor from './Mentor'
+import Mentor2 from './Mentor2'
+import Mentor3 from './Mentor3'
 import Learning from './Learning'
 import FooterNav from './FooterNav'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 
 function Dashboard() {
@@ -23,8 +27,27 @@ function Dashboard() {
                                 </h5>
                             </div>
                             <div className="mainContainer">
-                                <Link to="/Mentor"><Route component={Mentor}/></Link>
+                            <div className="carouselContainer">
+                                <CarouselProvider
+                                    naturalSlideWidth={325}
+                                    naturalSlideHeight={350}
+                                    totalSlides={3}
+                                >
+                                    <Slider>
+                                    <Slide index={0}><Link to="/Mentor"><Route component={Mentor}/></Link></Slide>
+                                    <Slide index={1}><Link to="/Mentor2"><Route component={Mentor2}/></Link></Slide>
+                                    <Slide index={2}><Link to="/Mentor3"><Route component={Mentor3}/></Link></Slide>
+                                    </Slider>
+                                    <ButtonBack>Back</ButtonBack>
+                                    <ButtonNext>Next</ButtonNext>
+                                </CarouselProvider>
                             </div>
+                            </div>
+
+                            {/* <div className="mainContainer">
+                                <Link to="/Mentor"><Route component={Mentor}/></Link>
+                            </div> */}
+
                             <div className="MentorHeaderText">
                                 <h2 style={{margin: 0}}>
                                     Learning Materials
@@ -42,6 +65,8 @@ function Dashboard() {
                     )
                 }}/>
             <Route exact path="/Mentor" component={Mentor} />
+            <Route exact path="/Mentor2" component={Mentor2} />
+            <Route exact path="/Mentor3" component={Mentor3} />
             <Route exact path="/Learning" component={Learning} />
             </Switch>
         </Router>
