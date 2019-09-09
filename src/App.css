@@ -50,3 +50,8 @@
 .mainContainer {
   margin: 1em 2em;
 }
+
+.carouselContainer {
+  margin: 0;
+  display: unset !important;
+}
