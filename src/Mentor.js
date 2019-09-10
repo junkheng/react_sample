@@ -48,9 +48,9 @@ export default function Mentor() {
                                 image="https://i1.wp.com/MynockManor.com/wp-content/uploads/2018/02/Darth-Vader-Dark-Lord-of-the-Sith-12.jpg"
                                 title="Lord Vader"
                             />
-                            <CardContent>
+                            <CardContent className="TextLeft">
                                 <Typography gutterBottom variant="h5" component="h2">
-                                Darth Vader
+                                    Darth Vader
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Student <br/>

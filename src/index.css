@@ -98,7 +98,21 @@ code {
   color: white;
 }
 
+.LearningHeaderText {
+  text-align: left !important;
+  width: 16em;
+  margin: 0 0 0 2em;
+}
+
 .BackButton {
   align-items: flex-start;
   text-align: left;
+}
+
+.TextLeft {
+  text-align: left;
+}
+
+.TextRight {
+  text-align: right;
 }

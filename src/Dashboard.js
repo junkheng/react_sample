@@ -27,28 +27,23 @@ function Dashboard() {
                                 </h5>
                             </div>
                             <div className="mainContainer">
-                            <div className="carouselContainer">
-                                <CarouselProvider
-                                    naturalSlideWidth={325}
-                                    naturalSlideHeight={350}
-                                    totalSlides={3}
-                                >
-                                    <Slider>
-                                    <Slide index={0}><Link style={{textDecoration: 'none'}} to="/Mentor"><Route component={Mentor}/></Link></Slide>
-                                    <Slide index={1}><Link style={{textDecoration: 'none'}} to="/Mentor2"><Route component={Mentor2}/></Link></Slide>
-                                    <Slide index={2}><Link style={{textDecoration: 'none'}} to="/Mentor3"><Route component={Mentor3}/></Link></Slide>
-                                    </Slider>
-                                    <ButtonBack>Back</ButtonBack>
-                                    <ButtonNext>Next</ButtonNext>
-                                </CarouselProvider>
+                                <div className="carouselContainer">
+                                    <CarouselProvider
+                                        naturalSlideWidth={325}
+                                        naturalSlideHeight={350}
+                                        totalSlides={3}
+                                    >
+                                        <Slider>
+                                            <Slide index={0}><Link style={{textDecoration: 'none'}} to="/Mentor"><Route component={Mentor}/></Link></Slide>
+                                            <Slide index={1}><Link style={{textDecoration: 'none'}} to="/Mentor2"><Route component={Mentor2}/></Link></Slide>
+                                            <Slide index={2}><Link style={{textDecoration: 'none'}} to="/Mentor3"><Route component={Mentor3}/></Link></Slide>
+                                        </Slider>
+                                        {/* <ButtonBack>Back</ButtonBack>
+                                        <ButtonNext>Next</ButtonNext> */}
+                                    </CarouselProvider>
+                                </div>
                             </div>
-                            </div>
-
-                            {/* <div className="mainContainer">
-                                <Link to="/Mentor"><Route component={Mentor}/></Link>
-                            </div> */}
-
-                            <div className="MentorHeaderText">
+                            <div className="LearningHeaderText">
                                 <h2 style={{margin: 0}}>
                                     Learning Materials
                                 </h2>
