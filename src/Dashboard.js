@@ -34,9 +34,9 @@ function Dashboard() {
                                     totalSlides={3}
                                 >
                                     <Slider>
-                                    <Slide index={0}><Link to="/Mentor"><Route component={Mentor}/></Link></Slide>
-                                    <Slide index={1}><Link to="/Mentor2"><Route component={Mentor2}/></Link></Slide>
-                                    <Slide index={2}><Link to="/Mentor3"><Route component={Mentor3}/></Link></Slide>
+                                    <Slide index={0}><Link style={{textDecoration: 'none'}} to="/Mentor"><Route component={Mentor}/></Link></Slide>
+                                    <Slide index={1}><Link style={{textDecoration: 'none'}} to="/Mentor2"><Route component={Mentor2}/></Link></Slide>
+                                    <Slide index={2}><Link style={{textDecoration: 'none'}} to="/Mentor3"><Route component={Mentor3}/></Link></Slide>
                                     </Slider>
                                     <ButtonBack>Back</ButtonBack>
                                     <ButtonNext>Next</ButtonNext>
