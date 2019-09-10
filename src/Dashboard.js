@@ -6,8 +6,9 @@ import Mentor3 from './Mentor3'
 import Learning from './Learning'
 import FooterNav from './FooterNav'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import Box from '@material-ui/core/Box';
 
 
 function Dashboard() {
@@ -27,7 +28,8 @@ function Dashboard() {
                                 </h5>
                             </div>
                             <div className="mainContainer">
-                                <div className="carouselContainer">
+                            <Link style={{textDecoration: 'none'}} to="/Mentor"><Route component={Mentor}/></Link>
+                                {/* <div className="carouselContainer">
                                     <CarouselProvider
                                         naturalSlideWidth={325}
                                         naturalSlideHeight={350}
@@ -38,10 +40,8 @@ function Dashboard() {
                                             <Slide index={1}><Link style={{textDecoration: 'none'}} to="/Mentor2"><Route component={Mentor2}/></Link></Slide>
                                             <Slide index={2}><Link style={{textDecoration: 'none'}} to="/Mentor3"><Route component={Mentor3}/></Link></Slide>
                                         </Slider>
-                                        {/* <ButtonBack>Back</ButtonBack>
-                                        <ButtonNext>Next</ButtonNext> */}
                                     </CarouselProvider>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="LearningHeaderText">
                                 <h2 style={{margin: 0}}>
