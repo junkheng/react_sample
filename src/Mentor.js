@@ -4,9 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './index.css';
 import { Chart } from "react-google-charts";
@@ -19,15 +17,29 @@ const useStyles = makeStyles({
     card: {
       maxWidth: 345,
       minWidth: 305,
-      paddingTop: 80,
+      paddingTop: 70,
+      marginTop: 70,
+      height: 255,
+      overflow: 'visible',
     },
+    profilecard: {
+        width: 355,
+        paddingTop: 70,
+        marginTop: 70,
+        height: 125,
+        overflow: 'visible',
+      },
     description: {
         marginTop: 20,
         width: 305,
     },
+    profiledescription: {
+        marginTop: 20,
+        width: 355,
+    },
     chart: {
         marginTop: 20,
-        width: 345,
+        width: 355,
     },
     media: {
       height: 120,
@@ -46,7 +58,7 @@ export default function Mentor() {
                     <Card className={classes.card}>
                         <CardActionArea>
                             <CardMedia
-                                className="image--cover"
+                                className="MentorImage"
                                 image="https://i1.wp.com/MynockManor.com/wp-content/uploads/2018/02/Darth-Vader-Dark-Lord-of-the-Sith-12.jpg"
                                 title="Lord Vader"
                             />
@@ -65,7 +77,7 @@ export default function Mentor() {
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
-                            <div style={{marginBottom: 20}}>
+                            <div>
                                 <button className="AppointmentButton">
                                     <p className="TextLeft" style={{fontSize: 15, paddingLeft: 10}}>CREATE APPOINTMENT</p>
                                     <p className="TextRight" style={{fontSize: 15, paddingRight: 10}}>→</p>
@@ -80,15 +92,15 @@ export default function Mentor() {
                         <div className="Mentor">
                             <Back />
                                 <header className="Mentor-header">
-                                <Card className={classes.card}>
+                                <Card className={classes.profilecard}>
                                     <CardActionArea>
                                         <CardMedia
-                                            className={classes.media}
+                                            className="MentorProfileImage"
                                             image="https://i1.wp.com/MynockManor.com/wp-content/uploads/2018/02/Darth-Vader-Dark-Lord-of-the-Sith-12.jpg"
                                             title="Lord Vader"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">
+                                            <Typography style={{color: '#4A90E2'}} gutterBottom variant="h5" component="h2">
                                                 Darth Vader
                                             </Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
@@ -98,7 +110,7 @@ export default function Mentor() {
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
-                                <Card className={classes.description}>
+                                <Card className={classes.profiledescription}>
                                     <CardContent>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 

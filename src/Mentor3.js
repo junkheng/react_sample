@@ -4,7 +4,6 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './index.css';
@@ -18,14 +17,29 @@ const useStyles = makeStyles({
     card: {
       maxWidth: 345,
       minWidth: 305,
+      paddingTop: 70,
+      marginTop: 70,
+      height: 255,
+      overflow: 'visible',
     },
+    profilecard: {
+        width: 355,
+        paddingTop: 70,
+        marginTop: 70,
+        height: 125,
+        overflow: 'visible',
+      },
     description: {
         marginTop: 20,
         width: 305,
     },
+    profiledescription: {
+        marginTop: 20,
+        width: 355,
+    },
     chart: {
         marginTop: 20,
-        width: 345,
+        width: 355,
     },
     media: {
       height: 120,
@@ -44,17 +58,17 @@ export default function Mentor3() {
                     <Card className={classes.card}>
                         <CardActionArea>
                             <CardMedia
-                                className={classes.media}
-                                image="https://static0.srcdn.com/wordpress/wp-content/uploads/2017/01/yoda-the-force-star-wars.jpg?q=50&fit=crop&w=798&h=407&dpr=1.5"
-                                title="Yoda"
+                                className="MentorImage"
+                                image="https://i1.wp.com/empirelegion.com/wp-content/uploads/2019/01/Boba_Fett_2_2bd57c36-2d60-4b7f-a8cb-1c0c785a6d71_1200x1200.jpg?resize=1024%2C1024"
+                                title="Lord Vader"
                             />
                             <CardContent className="TextLeft">
                                 <Typography style={{color: '#4A90E2'}} gutterBottom variant="h5" component="h2">
-                                    Yoda
+                                    Boba Fett
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Jedi Master <br/>
-                                    Jedi Sanctuary
+                                    Student <br/>
+                                    INIT College 
                                 </Typography>
                                 <br />
                                 <Typography variant="body2" color="textSecondary" component="p">
@@ -63,13 +77,13 @@ export default function Mentor3() {
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
-                        <div style={{marginBottom: 20}}>
-                            <button className="AppointmentButton">
-                                <p className="TextLeft" style={{fontSize: 15, paddingLeft: 10}}>CREATE APPOINTMENT</p>
-                                <p className="TextRight" style={{fontSize: 15, paddingRight: 10}}>→</p>
-                                {/* Create Appointment → */}
-                            </button>
-                        </div>
+                            <div>
+                                <button className="AppointmentButton">
+                                    <p className="TextLeft" style={{fontSize: 15, paddingLeft: 10}}>CREATE APPOINTMENT</p>
+                                    <p className="TextRight" style={{fontSize: 15, paddingRight: 10}}>→</p>
+                                    {/* Create Appointment → */}
+                                </button>
+                            </div>
                     </Card>
                     )
                 }}/>
@@ -78,25 +92,25 @@ export default function Mentor3() {
                         <div className="Mentor">
                             <Back />
                                 <header className="Mentor-header">
-                                <Card className={classes.card}>
+                                <Card className={classes.profilecard}>
                                     <CardActionArea>
                                         <CardMedia
-                                            className={classes.media}
-                                            image="https://static0.srcdn.com/wordpress/wp-content/uploads/2017/01/yoda-the-force-star-wars.jpg?q=50&fit=crop&w=798&h=407&dpr=1.5"
-                                            title="Yoda"
+                                            className="MentorProfileImage"
+                                            image="https://i1.wp.com/empirelegion.com/wp-content/uploads/2019/01/Boba_Fett_2_2bd57c36-2d60-4b7f-a8cb-1c0c785a6d71_1200x1200.jpg?resize=1024%2C1024"
+                                            title="Lord Vader"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">
-                                                Yoda
+                                            <Typography style={{color: '#4A90E2'}} gutterBottom variant="h5" component="h2">
+                                                Boba Fett
                                             </Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                Jedi Master <br/>
-                                                Jedi Sanctuary
+                                                Student <br/>
+                                                INIT College
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
-                                <Card className={classes.description}>
+                                <Card className={classes.profiledescription}>
                                     <CardContent>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -114,8 +128,8 @@ export default function Mentor3() {
                                             chartType="BarChart"
                                             loader={<div>Loading Chart</div>}
                                             data={[
-                                                ['Subject', 'Force', 'Lightsaber', 'Jump', 'Age'],
-                                                ['', 100, 50, 80, 95],
+                                                ['Subject', 'Math', 'English', 'History', 'Science'],
+                                                ['', 100, 92, 80, 95],
                                             ]}
                                             options={{
                                                 title: 'Subject Competency',

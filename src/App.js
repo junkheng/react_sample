@@ -8,6 +8,8 @@ import Dashboard from './Dashboard';
 import {Grid} from '@material-ui/core';
 import Learning from './Learning';
 import Mentor from './Mentor'
+import Mentor2 from './Mentor2'
+import Mentor3 from './Mentor3'
 
 function App() {
 	return (
@@ -38,6 +40,8 @@ function App() {
 				)
 			}} />
             <Route exact path="/Mentor" component={Mentor} />
+            <Route exact path="/Mentor2" component={Mentor2} />
+            <Route exact path="/Mentor3" component={Mentor3} />
             <Route exact path="/Learning" component={Learning} />
 			<Route exact path="/Dashboard" component={Dashboard} />
 		</Router>
