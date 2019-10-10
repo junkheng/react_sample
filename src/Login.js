@@ -14,7 +14,7 @@ class Login extends React.Component {
 			<div>
 				<form onSubmit={this.submitForm.bind(this)}>
                     <Grid container spacing={3}>
-                        <Grid item xs={12}>
+                        {/* <Grid item xs={12}>
                             <TextField
                                 required
                                 id="email"
@@ -29,12 +29,12 @@ class Login extends React.Component {
                                 label="Password"
                                 margin="normal"
                             />
-                        </Grid>
+                        </Grid> */}
                         <Grid item xs={12}>
-                            <Button className="LoginButton" variant="outlined" type="submit">LOGIN</Button >
-                            <p className="BlueText">
+                            <Button className="LoginButton" variant="outlined" type="submit">Let's Go!</Button >
+                            {/* <p className="BlueText">
                                 Forgot password
-                            </p>
+                            </p> */}
                         </Grid>
                     </Grid>
                 </form>
