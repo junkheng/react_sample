@@ -16,7 +16,7 @@ function App() {
 		<Router>
 			<Route path="/" exact render={() => {
 				return (
-                    <Grid container spacing={1}>
+                    <Grid container>
                         <Grid item xs={12}>
                             <div className="App">
                                 <header className="App-header">
