@@ -33,12 +33,12 @@ export default function StickyFooter() {
       <footer className={classes.footer}>
         <Container maxWidth="sm">
           <div>
-                <h6>
-                    Don't have an account?<br />                 
-                <span className={classes.bluetext}>
-                    Sign up for an account.
-                </span>
-                </h6>
+            <h6>
+              Don't have an account?<br />                 
+            <span className={classes.bluetext}>
+              Sign up for an account.
+            </span>
+            </h6>
           </div>
         </Container>
       </footer>
